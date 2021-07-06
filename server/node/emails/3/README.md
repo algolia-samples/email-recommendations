@@ -12,6 +12,6 @@ We send an email featuring some of the best rated products from this category.
 
 #### Resources
 
-<a href="https://github.com/algolia-samples/email-recommendations/tree/master/server/node/emails/0" target="_blank">Recommendations source code</a>
+<a href="https://github.com/algolia-samples/email-recommendations/tree/master/server/node/emails/3" target="_blank">Recommendations source code</a>
 
 <a href="https://github.com/algolia-samples/email-recommendations/tree/master/server/node/templates/pre_order.html" target="_blank">Email template</a>
