@@ -88,26 +88,37 @@ body {
     -webkit-text-size-adjust: 100%;
 }
 
-.banner {
-    max-width: 825px;
-    margin: 0 auto;
-    padding: 0 22px;
-    font-size: 16px;
-    background: white;
-    color: var(--grey-800);
-    border-radius: 6px;
-    box-shadow: 0px 0px 0px 0.5px rgb(50 50 93 / 10%), 0px 2px 5px 0px rgb(50 50 93 / 10%), 0px 1px 1.5px 0px rgb(0 0 0 / 7%);
+.container {
     display: flex;
-    align-items: center;
-    padding: 15px;
-    line-height: 1.15;
-    position: fixed;
-    top: 2vh;
-    left: 0;
-    right: 0;
-    text-align: center;
+    flex-direction: row;
 }
 
-.banner > span {
-    margin: 0 auto;
+.sidebar {
+    padding: 20px;
+    box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    height: 100vh;
+}
+
+.sidebar :is(ul, ol) {
+    padding: 0;
+    margin-left: 10px;
+}
+
+.sidebar li {
+    margin-bottom: 8px;
+}
+
+#main {
+    max-height: 100vh;
+    overflow-y: scroll;
+}
+
+#templateForm {
+    margin: 20px 0px;
+}
+
+label {
+    display: block;
+    padding-bottom: 5px;
 }

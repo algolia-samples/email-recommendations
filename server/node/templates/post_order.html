@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% block body %}
+<!-- 1 Column Text + Button : BEGIN -->
+<tr>
+  <td style="background-color: #ffffff;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tr>
+        <td style="padding: 20px; font-family: Hind, sans-serif; font-size: 15px; line-height: 20px; color: #36395a;">
+          <h1 style="margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #36395a; font-weight: normal;">
+            Thank you for your order.</h1>
+          <p style="margin: 0 0 10px;">We will let you know by e-mail when the items of your order are dispatched.
+            You can track the status of your order or change it in Your Orders.</p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- 1 Column Text : BEGIN -->
+<tr>
+  <td style="background-color: #ffffff;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tr>
+        <td style="padding: 0px 0px 0px 20px;">
+          <h2
+            style="margin: 0 0 10px 0; font-family: Hind, sans-serif; font-size: 18px; line-height: 22px; color: #36395a; font-weight: bold;">
+            Your order details</h2>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- Thumbnail Left, Text Right : BEGIN -->
+<tr>
+  <td dir="ltr" width="100%" style="padding: 10px; background-color: #ffffff;">
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <!-- Column : BEGIN -->
+        <th width="33.33%" class="stack-column-center">
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td dir="ltr" valign="top" style="padding: 0 10px;">
+                <img src="https://flagship-fashion-demo-images.s3.amazonaws.com/images/D06192-9517-6456.jpg" width="170"
+                  height="170" alt="Motac Deconstructed 3D Mid Waist Skinny Jeans" border="0" class="center-on-narrow"
+                  style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+              </td>
+            </tr>
+          </table>
+        </th>
+        <!-- Column : END -->
+        <!-- Column : BEGIN -->
+        <th width="66.66%" class="stack-column-center">
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td dir="ltr" valign="top"
+                style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #555555; padding: 10px; text-align: left;"
+                class="center-on-narrow">
+                <h3
+                  style="margin: 0 0 10px 0; font-family: sans-serif; font-size: 16px; line-height: 22px; color: #333333; font-weight: bold;">
+                  Motac Deconstructed 3D Mid Waist Skinny Jeans</h2>
+                  <p style="margin: 0 0 10px 0;">Grey</p>
+                  <p style="margin: 0 0 10px 0;">$210</p>
+              </td>
+            </tr>
+          </table>
+        </th>
+        <!-- Column : END -->
+      </tr>
+    </table>
+  </td>
+</tr>
+{% for recommendation in recommendations %}
+<!-- 1 Column Text + Button : END -->
+<!-- Clear Spacer : BEGIN -->
+<tr>
+  <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+    &nbsp;
+  </td>
+</tr>
+<!-- Clear Spacer : END -->
+{% include "partials/products_3_columns.html" %}
+{% endfor %}
+{% endblock %}

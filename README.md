@@ -1,38 +1,38 @@
-# Sample application template
+# Emails recommendations
 
-This is a template you can use to create other Algolia sample applications. It contains a variety of features that every Algolia sample app should ideally include. You can use the [Github repository template](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) functionality to create your sample app from this template.
+This sample app is showcasing various ways to implement recommendations in transactionnal emails, leveraging different Algolia products. 
 
 ## Features
 
-The sample app uses the following features:
+This sample app uses the following features:
 
-- Three back-end implementations in different languages
-- ...
+- Rock-solid base email template with [Cerberus](https://tedgoas.github.io/Cerberus/)
+- A rich and powerful templating language with [Nunjucks](https://mozilla.github.io/nunjucks/)
+- Three different kind of email templates, matching different moment of the customer's journey (pre-order, post-order, re-engagement).
+- Various exemples of how to offer great recommendations, all leveraging Algolia!
 
 ## Demo (Try it yourself!)
 
-Adding a live demo (e.g., on [CodeSandbox](https://codesandbox.io/)) will let the people quickly test your sample application!
+[Access the demo](https://d8nd8.sse.codesandbox.io/)
 
-## How to run the sample app locally
+## How to run this sample app locally
 
-The sample app implements three servers in the following programming languages:
+This sample app implements one server in the following programming language:
 
-- [Python](server/python)
 - [Node.js/JavaScript](server/node)
-- [Go](server/go)
 
 The [client](client) is a single HTML page.
 
 ### 1. Clone this repository
 
 ```
-git clone https://github.com/algolia-samples/chatbot-with-algolia-answers
+git clone https://github.com/algolia-samples/email-recommendations
 ```
 
-Copy the file `.env.example` to the directory of the server you want to use and rename it to `.env`. For example, to use the Python implementation:
+Copy the file `.env.example` to the directory of the server you want to use and rename it to `.env`. For example, to use the Node implementation:
 
 ```bash
-cp .env.example server/python/.env
+cp .env.example server/node/.env
 ```
 
 ### 2. Set up Algolia
@@ -63,27 +63,18 @@ ALGOLIA_API_KEY=<replace-with-your-algolia-api-key>
 Each server directory has a file with instructions:
 
 - [Node.js](server/node/README)
-- [Python](server/python/README)
-- [Go](server/go/README)
 
-For example, to run the Python implementation of the server, follow these steps:
+For example, to run the Node implementation of the server, follow these steps:
 
 ```bash
-cd server/python # there's a README in this folder with instructions
-python3 venv env
-source env/bin/activate
-pip3 install -r requirements.txt
-export FLASK_APP=server.py
-python3 -m flask run --port=4242
+cd server/node # there's a README in this folder with instructions
+npm install
+npm start
 ```
-
-## Resources
-
-- [GitHub's repository template](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) functionality
 
 ## Contributing
 
-This template is open source and welcomes contributions. All contributions are subject to our [Code of Conduct](https://github.com/algolia-samples/.github/blob/master/CODE_OF_CONDUCT.md).
+This sample app is open source and welcomes contributions. All contributions are subject to our [Code of Conduct](https://github.com/algolia-samples/.github/blob/master/CODE_OF_CONDUCT.md).
 
 ## Authors
 

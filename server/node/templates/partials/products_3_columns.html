@@ -1,0 +1,47 @@
+<!-- 1 Column Text : BEGIN -->
+<tr>
+  <td style="background-color: #ffffff;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tr>
+        <td style="padding: 20px 0px 0px 20px;">
+          <h2
+            style="margin: 0 0 10px 0; font-family: Hind, sans-serif; font-size: 18px; line-height: 22px; color: #36395a; font-weight: bold;">
+            {{ recommendation.label }}</h2>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- 1 Column Text : END -->
+<!-- 3 Even Columns : BEGIN -->
+<tr>
+  <td style="padding: 10px; background-color: #ffffff;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tr>
+        {% for item in recommendation.hits %}
+        <!-- Column : BEGIN -->
+        <th valign="top" width="33.33%" class="stack-column-center">
+          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tr>
+              <td style="padding: 10px; text-align: center">
+                <img src="{{ item.image_link }}" width="170"
+                  height="" alt="{{ recommendation.name }}" border="0"
+                  style="width: 100%; max-width: 170px; height: auto; background: #dddddd; font-family: Hind, sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+              </td>
+            </tr>
+            <tr>
+              <td
+                style="font-family: sans-serif; font-size: 15px; line-height: 20px; color: #36395a; padding: 0 10px 10px; text-align: left;"
+                class="center-on-narrow">
+                <p style="margin: 0;">{{ item.name }}</p>
+              </td>
+            </tr>
+          </table>
+        </th>
+        <!-- Column : END -->
+        {% endfor %}
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- 3 Even Columns : END -->

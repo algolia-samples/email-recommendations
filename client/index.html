@@ -11,13 +11,23 @@
         <link rel="stylesheet" href="css/index.css" />
     </head>
     <body>
-        <div class="banner">
-            <span>This is an
-                <a href="https://github.com/algolia-samples"> Algolia sample template</a> 
-                <a href="https://github.com/algolia-samples/sample-application"> 
-                    View code on GitHub.
-                </a>
-            </span>
+        <div class="container">
+            <div class="sidebar">
+                <p>This is an
+                    <a href="https://github.com/algolia-samples"> Algolia sample application,</a> showcasing how to build different emails recommendations with Algolia.<br/></br>
+                    <a href="https://github.com/algolia-samples/emails-recommandations"> 
+                        View code on GitHub
+                    </a>
+                </p>
+                <hr>
+                <form action="" id="templateForm">
+                    <label for="templateName">Select an email template:</label>
+                    <select name="templateName" id="templateName"></select>
+                </form>
+                <p id="explanation"></p>
+            </div>
+            <div id="main"></div>
         </div>
+        <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
