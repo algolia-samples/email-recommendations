@@ -1,19 +1,19 @@
-# Emails recommendations
+# Email recommendations
 
-This sample app is showcasing various ways to implement recommendations in transactionnal emails, leveraging different Algolia products. 
+This sample app showcases how to leverage Algolia Recommend to show product recommendations in emails. 
 
 ## Features
 
-This sample app uses the following features:
+This sample app comes with the following features:
 
-- Rock-solid base email template with [Cerberus](https://tedgoas.github.io/Cerberus/)
+- A rock-solid base email template with [Cerberus](https://tedgoas.github.io/Cerberus/)
 - A rich and powerful templating language with [Nunjucks](https://mozilla.github.io/nunjucks/)
-- Three different kind of email templates, matching different moment of the customer's journey (pre-order, post-order, re-engagement).
-- Various exemples of how to offer great recommendations, all leveraging Algolia!
+- Three different email templates for different moments of the customer's journey (pre-order, post-order, re-engagement)
+- Different models for recommended products with Algolia Recommend (frequently bought together, related products) and Faceting (best rated products in category)
 
 ## Demo (Try it yourself!)
 
-[Access the demo](https://d8nd8.sse.codesandbox.io/)
+[Run the demo](https://d8nd8.sse.codesandbox.io/)
 
 ## How to run this sample app locally
 
@@ -60,7 +60,7 @@ ALGOLIA_API_KEY=<replace-with-your-algolia-api-key>
 
 ### 6. Follow the instructions in the server directory
 
-Each server directory has a file with instructions:
+The server directory has a file with instructions:
 
 - [Node.js](server/node/README)
 
