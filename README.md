@@ -1,6 +1,14 @@
 # Email recommendations
 
-This sample app showcases how to leverage Algolia Recommend to show product recommendations in emails. 
+This sample app shows how to leverage Algolia Search and Algolia Recommend to display product recommendations in emails.
+Showing recommendations is a great way to engage your customers at various stages of their journey before and after visiting your site.
+
+This sample app comes with the following recommendation models:
+
+- A customer browsed in a category: recommend **best rated** products from that category. This recommendation model uses Algolia's [Faceting](/doc/guides/managing-results/refine-results/faceting/) feature.
+- A customer just bought a product: recommend products that are **frequently bought together**. This recommendation model uses [Algolia Recommend](/doc/guides/algolia-ai/recommend/) to train a machine-learning algorithm based on which products users often buy together.
+- A customer just bought a product: recommend **related products**. This model also leverages Algolia Recommend to train a machine-learning algorithm to find products that similar.
+- A customer has an existing user profile: recommend products that match their _affinities_. This model uses Algolia Recommend and [Personalization](/doc/guides/personalization/what-is-personalization/).
 
 ## Features
 
@@ -9,7 +17,7 @@ This sample app comes with the following features:
 - A rock-solid base email template with [Cerberus](https://tedgoas.github.io/Cerberus/)
 - A rich and powerful templating language with [Nunjucks](https://mozilla.github.io/nunjucks/)
 - Three different email templates for different moments of the customer's journey (pre-order, post-order, re-engagement)
-- Different models for recommended products with Algolia Recommend (frequently bought together, related products) and Faceting (best rated products in category)
+- Four different models for recommended products with Algolia Recommend and faceting
 
 ## Demo (Try it yourself!)
 
@@ -79,3 +87,4 @@ This sample app is open source and welcomes contributions. All contributions are
 ## Authors
 
 - [@cdenoix](https://twitter.com/cdenoix)
+- [kai687](https://github.com/kai687)
