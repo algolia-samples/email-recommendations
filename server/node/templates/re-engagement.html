@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block body %}
+<!-- 1 Column Text + Button : BEGIN -->
+<tr>
+  <td style="background-color: #ffffff;">
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+      <tr>
+        <td style="padding: 20px; font-family: Hind, sans-serif; font-size: 15px; line-height: 20px; color: #36395a;">
+          <h1 style="margin: 0 0 10px; font-size: 25px; line-height: 30px; color: #36395a; font-weight: normal;">
+            {{ title }}</h1>
+          <p style="margin: 0 0 10px;">{{ intro }}</p>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+{% for recommendation in recommendations %}
+  <!-- 1 Column Text + Button : END -->
+  <!-- Clear Spacer : BEGIN -->
+  <tr>
+    <td aria-hidden="true" height="40" style="font-size: 0px; line-height: 0px;">
+      &nbsp;
+    </td>
+  </tr>
+  <!-- Clear Spacer : END -->
+  {% include "partials/products_full_width.html" %}
+{% endfor %}
+{% endblock %}
