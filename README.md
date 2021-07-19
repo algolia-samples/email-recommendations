@@ -8,7 +8,7 @@ This sample app comes with the following recommendation models:
 - A customer browsed in a category: recommend **best rated** products from that category. This recommendation model uses Algolia's [Faceting](/doc/guides/managing-results/refine-results/faceting/) feature.
 - A customer just bought a product: recommend products that are **frequently bought together**. This recommendation model uses [Algolia Recommend](/doc/guides/algolia-ai/recommend/) to train a machine-learning algorithm based on which products users often buy together.
 - A customer just bought a product: recommend **related products**. This model also leverages Algolia Recommend to train a machine-learning algorithm to find products that are similar.
-- A customer has an existing user profile: recommend products that match their _affinities_. This model uses Algolia Recommend and [Personalization](/doc/guides/personalization/what-is-personalization/).
+- A customer has an existing user profile: recommend products that match their _affinities_. This model uses Algolia Recommend and [Personalization](https://www.algolia.com/doc/guides/personalization/what-is-personalization/).
 
 ## Features
 
