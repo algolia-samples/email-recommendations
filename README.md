@@ -13,7 +13,7 @@ This sample app uses the following features:
 
 ## Demo (Try it yourself!)
 
-[Access the demo](https://d8nd8.sse.codesandbox.io/)
+[Access the demo](https://emails-recommendations.herokuapp.com/)
 
 ## How to run this sample app locally
 
