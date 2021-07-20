@@ -2,6 +2,8 @@
 
 This sample app is showcasing various ways to implement recommendations in transactionnal emails, leveraging different Algolia products. 
 
+<img src="demo/diagram.png?raw=true" alt="A flowchart of the email recommendations sample application" align="center">
+
 ## Features
 
 This sample app uses the following features:
