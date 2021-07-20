@@ -10,6 +10,8 @@ This sample app comes with the following recommendation models:
 - A customer just bought a product: recommend **related products**. This model also leverages Algolia Recommend to train a machine-learning algorithm to find products that are similar.
 - A customer has an existing user profile: recommend products that match their _affinities_. This model uses Algolia Recommend and [Personalization](https://www.algolia.com/doc/guides/personalization/what-is-personalization/).
 
+<img src="demo/diagram.png?raw=true" alt="A flowchart of the email recommendations sample application" align="center">
+
 ## Features
 
 This sample app comes with the following features:
