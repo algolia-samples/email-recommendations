@@ -100,7 +100,7 @@ app.get("/render/:emailIndex", async (req, res) => {
     });
 });
 
-// Send a given email, identified by his index
+// Send a given email, identified by its index
 app.post("/send/:emailIndex", async (req, res) => {
     const { emailIndex } = req.params;
     const emails = await loadEmails();
