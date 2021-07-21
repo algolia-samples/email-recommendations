@@ -61,7 +61,7 @@ ALGOLIA_API_KEY=<replace-with-your-algolia-api-key>
 ### 4. (Optional) Configure an email sending provider
 
 With this sample app, you can send the preview to your email address.
-We do provide a minimal working exemple with [SendGrid](https://sendgrid.com/).
+We provide a minimal working example with [SendGrid](https://sendgrid.com/) as email provider.
 
 In order to use SendGrid, you need to set the environment variables `SENDGRID_API_KEY` and `SENDGRID_FROM_EMAIL` in the `.env` file:
 
