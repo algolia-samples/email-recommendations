@@ -1,19 +1,30 @@
-# Emails recommendations
+# Email recommendations
 
-This sample app is showcasing various ways to implement recommendations in transactionnal emails, leveraging different Algolia products. 
+This sample app shows how to leverage Algolia Search and Algolia Recommend to display product recommendations in emails.
+Showing recommendations is a great way to engage your customers at various stages of their journey before and after visiting your site.
+
+This sample app comes with the following recommendation models:
+
+- A customer browsed a category: recommend **best rated** products from that category. This recommendation model uses Algolia's [Faceting](https://www.algolia.com/doc/guides/managing-results/refine-results/faceting/) feature.
+- A customer just bought a product: recommend products that are **frequently bought together**. This recommendation model uses [Algolia Recommend](https://www.algolia.com/doc/guides/algolia-ai/recommend/) to train a machine-learning algorithm based on which products users often buy together.
+- A customer just bought a product: recommend **related products**. This model also leverages Algolia Recommend to train a machine-learning algorithm to find products that are similar.
+- A customer has an existing user profile: recommend products that match their _affinities_. This model uses Algolia Recommend and [Personalization](https://www.algolia.com/doc/guides/personalization/what-is-personalization/).
+
+<img src="demo/diagram.png?raw=true" alt="A flowchart of the email recommendations sample application" align="center">
 
 ## Features
 
-This sample app uses the following features:
+This sample app comes with the following features:
 
-- Rock-solid base email template with [Cerberus](https://tedgoas.github.io/Cerberus/)
+- A rock-solid base email template with [Cerberus](https://tedgoas.github.io/Cerberus/)
 - A rich and powerful templating language with [Nunjucks](https://mozilla.github.io/nunjucks/)
-- Three different kind of email templates, matching different moment of the customer's journey (pre-order, post-order, re-engagement).
-- Various exemples of how to offer great recommendations, all leveraging Algolia!
+- Three different email templates for different moments of the customer's journey (pre-order, post-order, re-engagement)
+- Four different models for recommended products with Algolia Recommend and faceting
 
 ## Demo (Try it yourself!)
 
-[Access the demo](https://emails-recommendations.herokuapp.com/)
+[Run the demo](https://emails-recommendations.herokuapp.com/)
+
 
 ## How to run this sample app locally
 
@@ -72,7 +83,7 @@ SENDGRID_FROM_EMAIL=<replace-with-sendgrid-from-email>
 
 ### 5. Follow the instructions in the server directory
 
-Each server directory has a file with instructions:
+The server directory has a file with instructions:
 
 - [Node.js](server/node/README)
 
@@ -91,3 +102,4 @@ This sample app is open source and welcomes contributions. All contributions are
 ## Authors
 
 - [@cdenoix](https://twitter.com/cdenoix)
+- [kai687](https://github.com/kai687)
