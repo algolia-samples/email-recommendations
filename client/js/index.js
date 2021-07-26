@@ -1,4 +1,5 @@
 var selectTemplateEl = document.getElementById("templateName");
+var sendEmailFormEl = document.getElementById("sendForm");
 
 selectTemplateEl.addEventListener("change", function(ev) {
   var emailIndex = ev.target.value;
@@ -30,4 +31,20 @@ var loadTemplates = function() {
 };
 
 loadTemplates();
+
+sendEmailFormEl.addEventListener("submit", function(ev) {
+  ev.preventDefault();
+  var emailInputEl = document.getElementById("toEmail");
+  var selectTemplateEl = document.getElementById("templateName");
+  var sendUrl = "/send/" + selectTemplateEl.value;
+  fetch(sendUrl, {
+    method: 'POST',
+    body: JSON.stringify({
+      toEmail: emailInputEl.value,
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8'
+    }
+  }).then();
+});
 

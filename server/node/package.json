@@ -13,6 +13,7 @@
     "dependencies": {
         "@algolia/recommend": "^4.10.2",
         "@algolia/recommend-js": "^1.0.0",
+        "@sendgrid/mail": "^7.4.5",
         "algoliasearch": "^4.9.1",
         "body-parser": "^1.19.0",
         "dotenv": "^8.0.0",

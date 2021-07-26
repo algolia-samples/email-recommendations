@@ -69,7 +69,19 @@ ALGOLIA_INDEX_NAME=<replace-with-your-algolia-index-name>
 ALGOLIA_API_KEY=<replace-with-your-algolia-api-key>
 ```
 
-### 6. Follow the instructions in the server directory
+### 4. (Optional) Configure an email sending provider
+
+With this sample app, you can send the preview to your email address.
+We provide a minimal working example with [SendGrid](https://sendgrid.com/) as email provider.
+
+In order to use SendGrid, you need to set the environment variables `SENDGRID_API_KEY` and `SENDGRID_FROM_EMAIL` in the `.env` file:
+
+```bash
+SENDGRID_API_KEY=<replace-with-your-sendgrid-api-key>
+SENDGRID_FROM_EMAIL=<replace-with-sendgrid-from-email>
+```
+
+### 5. Follow the instructions in the server directory
 
 The server directory has a file with instructions:
 
