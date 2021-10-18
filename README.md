@@ -21,11 +21,6 @@ This sample app comes with the following features:
 - Three different email templates for different moments of the customer's journey (pre-order, post-order, re-engagement)
 - Four different models for recommended products with Algolia Recommend and faceting
 
-## Demo (Try it yourself!)
-
-[Run the demo](https://emails-recommendations.herokuapp.com/)
-
-
 ## How to run this sample app locally
 
 This sample app implements one server in the following programming language:
